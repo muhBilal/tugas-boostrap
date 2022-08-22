@@ -11,37 +11,99 @@
 </head>
 
 <body>
-    <div v class="border">
-        <h1>Inosoft Bootcamp</h1>
-        <p>Bootstrap intro</p>
-        <img src="img/01.jpg" class="card-img-top" alt="...">
-    </div>
+    <div class="container p-3">
+        <div>
+            <h1>Inosoft Bootcamp</h1>
+            <p>Bootstrap intro</p>
+            <hr>
+            <img src="img/01.jpg" class="card-img-top my-2" alt="...">
+        </div>
 
-    <!-- card -->
-    <div class="d-flex d-xs-flex-column" style="margin: ;auto">
-        <div class="card" style="width: 18rem;">
-            <img src="img/01.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+        <!-- card -->
+        <div class="d-xl-flex  justify-content-center " style="margin: auto; gap:12px">
+            <div class="card w-full">
+                <img src="img/01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card w-full">
+                <img src="img/01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card w-full">
+                <img src="img/01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="img/01.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="img/01.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-            </div>
-        </div>
-    </div>
 
+        <!-- contact us -->
+        <div class="mt-5">
+            <form>
+                <!-- left input -->
+                <div class="d-xl-flex" style="gap: 15px;">
+
+                    <div class="w-100">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">phone</label>
+                            <input type="" class="form-control" id="exampleInputPassword1" placeholder="phone">
+                        </div>
+                        <div>
+                            <label for="exampleInputPassword1">Gender</label>
+                            <div class="d-flex" style="gap: 10px;">
+                                <div class="d-flex" style="gap: 10px;">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Laki-laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                </div>
+                                <select class="form-control form-control-sm" style="width: 30%;">
+                                    <option>Small select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right input -->
+                    <div class="w-100">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary float-right mt-3 w-25">Submit</button>
+            </form>
+        </div>
+
+    </div>
 </body>
 
 </html>
